@@ -41,8 +41,8 @@ python main.py
 
 ## Using with Tablet (IP Webcam)
 
-1. **Connect** the tablet to your local Wi-Fi network.
-2. **Open** the IP Webcam app.
+1. **Connect** the tablet to your local Wi-Fi network (ensure this device is connected to the same network as the machine running the application).
+2. **Install and open** the IP Webcam app on the tablet (make sure the IP Webcam app is installed).
 3. **Start the server** in the app.
 4. **Note** the IP address and port number displayed (in HTTP form).
 5. **Convert** to RTSP format:  
@@ -64,6 +64,37 @@ python main.py
 
 ---
 
+## Using with CCTV (RTSP Camera)
+
+To use this system with a CCTV or any RTSP-compatible camera, follow these steps:
+
+1. **Set up your CCTV camera** and ensure it is connected to your local network.
+2. **Obtain the RTSP stream URL** from your camera's settings or user manual. It usually looks like:
+   - `rtsp://<username>:<password>@<camera-ip>:<port>/path`
+   - Example: `rtsp://admin:password@192.168.1.100:554/stream1`
+3. **Edit the `main.py` file** to add your CCTV RTSP stream(s) to the `CAMERA_URLS` dictionary:
+
+    ```python
+    CAMERA_URLS = {
+        "cam1": "rtsp://admin:password@192.168.1.100:554/stream1",
+        # Add more cameras as needed
+    }
+    ```
+
+4. **Save the changes** to `main.py`.
+5. **Run the application**:
+
+    ```bash
+    python main.py
+    ```
+
+6. **Access the web UI** from any device on the same network:
+   - `http://<server-ip>:8000/cam1`
+   - Replace `<server-ip>` with the IP address of the computer running this project.
+7. **View the live CCTV feed and face recognition results** in your browser.
+
+---
+
 ## Log File Explanation
 
 - **`selection_log.json`**:
@@ -73,15 +104,5 @@ python main.py
   - `name`: User image file name.
   - `button`: Which position's button was clicked.
   - `camera_id`: Location/device of the user click.
-
----
-
-## Notes
-
-- The main working folder is:  
-  `<your_project_directory>`
-- There is a secondary folder for dynamic file paths (optional):  
-  `<your_dynamic_path_folder>`  
-  (Note: There were issues converting this to `.exe`.)
 
 ---
