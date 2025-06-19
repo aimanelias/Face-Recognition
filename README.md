@@ -85,9 +85,3 @@ python main.py
   (Note: There were issues converting this to `.exe`.)
 
 ---
-
-## License
-
-[Specify your license here, e.g., MIT, Apache 2.0, etc.]
-
---- 
