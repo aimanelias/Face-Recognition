@@ -1,14 +1,14 @@
 # Face Recognition Multiple Feed UI v2
 
-A multi-camera face recognition system for MIMOS employees, using ONNX models and a web-based UI.
+A multi-camera face recognition system using ONNX models and a web-based UI.
 
 ---
 
 ## Project Structure
 
 - **`buffalo_l/`**: Model pack containing face detection and face recognition ONNX models.
-- **`db/`**: Images of all MIMOS employees.
-- **`failed_faces.txt`**: Lists employee images that failed to convert to embeddings.
+- **`db/`**: Images of all enrolled users.
+- **`failed_faces.txt`**: Lists images that failed to convert to embeddings.
 - **`selection_log.json`**: Logs face recognition and selection results.
 - **`captured_images/`**: Stores images captured from camera feeds.
 - **Source code**:  
@@ -41,7 +41,7 @@ python main.py
 
 ## Using with Tablet (IP Webcam)
 
-1. **Connect** the tablet to the `mimoswifi_5g` network.
+1. **Connect** the tablet to your local Wi-Fi network.
 2. **Open** the IP Webcam app.
 3. **Start the server** in the app.
 4. **Note** the IP address and port number displayed (in HTTP form).
@@ -51,16 +51,16 @@ python main.py
 
     ```python
     CAMERA_URLS = {
-        "cam1": "rtsp://admin:Mm813669@10.8.11.29/cam/realmonitor?channel=1&subtype=2",
-        "cam2": "rtsp://10.1.106.81:8080/h264_ulaw.sdp",
+        "cam1": "rtsp://admin:password@<ip-address>/cam/realmonitor?channel=1&subtype=2",
+        "cam2": "rtsp://<ip>:<port>/h264_ulaw.sdp",
     }
     ```
 
 7. **Access the web UI**:  
-   - `http://10.1.39.77:8000/cam1`  
-   - `http://10.1.39.77:8000/cam2`
+   - `http://<server-ip>:8000/cam1`  
+   - `http://<server-ip>:8000/cam2`
 8. **Leave** the IP Webcam app running in the background.
-9. **Open** "Fully Kiosk Browser" or Chrome and enter the website URL.
+9. **Open** your preferred browser and enter the website URL.
 
 ---
 
@@ -70,7 +70,7 @@ python main.py
   - `name: None` or `button: None` → No correct face recognized.
   - `name` not None and `button: 1` → Face recognized correctly.
   - `name` not None and `button: 2` or `3` → Face recognized, but not very accurate.
-  - `name`: Employee image file name.
+  - `name`: User image file name.
   - `button`: Which position's button was clicked.
   - `camera_id`: Location/device of the user click.
 
@@ -79,9 +79,9 @@ python main.py
 ## Notes
 
 - The main working folder is:  
-  `C:\Users\hyper\Documents\Face Recognition Multiple Feed UI v2`
-- There is a secondary folder for dynamic file paths:  
-  `C:\Users\hyper\Documents\Face Recognition Multiple Feed-build version`  
+  `<your_project_directory>`
+- There is a secondary folder for dynamic file paths (optional):  
+  `<your_dynamic_path_folder>`  
   (Note: There were issues converting this to `.exe`.)
 
 ---
