@@ -16,7 +16,7 @@ templates = Jinja2Templates(directory="templates")
 
 # Define camera feed sources
 CAMERA_URLS = { #ip pc = 10.1.39.77
-    "cam1": "rtsp://admin:Mm813669@10.8.11.29/cam/realmonitor?channel=1&subtype=2", #K-World cctv
+    "cam1": "rtsp://admin:Mm813669@10.8.11.29/cam/realmonitor?channel=1&subtype=2", 
     "cam2": "rtsp://10.1.106.81:8080/h264_ulaw.sdp", #Tablet camera #/h264_pcm.sdp , /onvif/device_service
     "cam3": "rtsp://root:P@ss4isp@10.1.39.88/axis-media/media.amp", #Axis camera
     #"cam4": "rtsp://admin:Mm813669@
