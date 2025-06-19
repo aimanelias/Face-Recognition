@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Miqdad",
+        "clicked_position": "1",
+        "top_prediction": "Miqdad",
+        "correct": true,
+        "timestamp": "2025-05-09 12:29:04",
+        "camera_id": "cam2"
+    },
+    {
+        "name": "MUHAMMAD AIMAN BIN MD ELIAS",
+        "clicked_position": "1",
+        "top_prediction": "MUHAMMAD AIMAN BIN MD ELIAS",
+        "correct": true,
+        "timestamp": "2025-05-09 12:29:12",
+        "camera_id": "cam2"
+    },
+    {
+        "name": "Miqdad",
+        "clicked_position": "1",
+        "top_prediction": "Miqdad",
+        "correct": true,
+        "timestamp": "2025-05-09 14:03:04",
+        "camera_id": "cam2"
+    },
+    {
+        "name": "MUHAMMAD AIMAN BIN MD ELIAS",
+        "clicked_position": "1",
+        "top_prediction": "MUHAMMAD AIMAN BIN MD ELIAS",
+        "correct": true,
+        "timestamp": "2025-05-09 14:11:16",
+        "camera_id": "cam2"
+    },
+    {
+        "name": "Nurul Syazwina",
+        "clicked_position": "1",
+        "top_prediction": "Nurul Syazwina",
+        "correct": true,
+        "timestamp": "2025-05-09 15:32:07",
+        "camera_id": "cam2"
+    },
+    {
+        "name": "Nurul Syazwina",
+        "clicked_position": "1",
+        "top_prediction": "Nurul Syazwina",
+        "correct": true,
+        "timestamp": "2025-05-09 15:32:17",
+        "camera_id": "cam2"
+    },
+    {
+        "name": "7322 MUHAMMAD AMIRULLAH BIN HAMZAH",
+        "clicked_position": "1",
+        "top_prediction": "7322 MUHAMMAD AMIRULLAH BIN HAMZAH",
+        "correct": true,
+        "timestamp": "2025-05-09 15:32:52",
+        "camera_id": "cam2"
+    },
+    {
+        "name": "None",
+        "clicked_position": "None",
+        "top_prediction": "6860 DURATUL AIN BINTI ROZLI",
+        "correct": false,
+        "timestamp": "2025-05-09 15:37:45",
+        "camera_id": "cam2"
+    },
+    {
+        "name": "7270 CHAN YAN BIN",
+        "clicked_position": "1",
+        "top_prediction": "7270 CHAN YAN BIN",
+        "correct": true,
+        "timestamp": "2025-05-09 15:38:16",
+        "camera_id": "cam2"
+    },
+    {
+        "name": "MOHAMAD SHUKRI BIN MASLAN",
+        "clicked_position": "1",
+        "top_prediction": "MOHAMAD SHUKRI BIN MASLAN",
+        "correct": true,
+        "timestamp": "2025-05-09 15:53:17",
+        "camera_id": "cam2"
+    }
+]
